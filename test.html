@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--=============== FAVICON ===============-->
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+  <!--=============== REMIXICONS ===============-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="assets/css/test.css">
+
+  <title>Portfolio - Wijayanto Agung Wibowo</title>
+</head>
+<body>
+  <!--==================== HEADER ====================-->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav__logo">Wijayanto</a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active-link">
+              <i class="ri-home-5-line"></i><span>Home</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">
+              <i class="ri-user-3-line"></i><span>About</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#skills" class="nav__link">
+              <i class="ri-code-line"></i><span>Skills</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#projects" class="nav__link">
+              <i class="ri-folders-line"></i><span>Projects</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">
+              <i class="ri-send-plane-line"></i><span>Contact</span>
+            </a>
+          </li>
+        </ul>
+
+        <!-- Close button (butuh JS kalau mau dipakai) -->
+        <div class="nav__close" id="nav-close">
+          <i class="ri-close-line"></i>
+        </div>
+      </div>
+
+      <div class="nav__buttons">
+        <!-- Theme change button (opsional) -->
+        <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+        <!-- Toggle button (butuh JS untuk mobile) -->
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-3-line"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--==================== MAIN ====================-->
+  <main class="main">
+    <!--==================== HOME ====================-->
+    <section class="home section" id="home">
+      <div class="home__container container grid">
+        <div class="home__data">
+          <span class="home__subtitle">Hello, I'm</span>
+          <h1 class="home__title">Wijayanto<br>Agung Wibowo</h1>
+          <h3 class="home__profession">Informatics Student · Web Dev & ML Enthusiast</h3>
+          <p class="home__description">
+            I enjoy building web applications and exploring machine learning, especially
+            in data-driven decision making and predictive analysis.
+          </p>
+
+          <div class="home__buttons">
+            <a href="#projects" class="button">
+              View Projects <i class="ri-arrow-right-line"></i>
+            </a>
+            <a href="#contact" class="button button--ghost">
+              Contact Me
+            </a>
+          </div>
+
+          <div class="home__social">
+            <a href="https://github.com/wijayanto-agung" class="home__social-link" aria-label="GitHub" target="_blank">
+              <i class="ri-github-line"></i>
+            </a>
+            <a href="https://linkedin.com/in/wijayanto-agung" class="home__social-link" aria-label="LinkedIn" target="_blank">
+              <i class="ri-linkedin-box-line"></i>
+            </a>
+            <a href="https://instagram.com/wijayanto.agung" class="home__social-link" aria-label="Instagram" target="_blank">
+              <i class="ri-instagram-line"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="home__image">
+          <!-- Ganti dengan fotomu sendiri -->
+          <img src="assets/img/perfil.png" alt="Profile" class="home__img">
+        </div>
+      </div>
+    </section>
+
+    <!--==================== ABOUT ====================-->
+    <section class="about section" id="about">
+      <div class="container">
+        <h2 class="section__title">About Me</h2>
+        <span class="section__subtitle">Get to know me</span>
+
+        <div class="about__container grid">
+          <div class="about__image">
+            <img src="assets/img/perfil.png" alt="About image" class="about__img">
+          </div>
+
+          <div class="about__data">
+            <p class="about__description">
+              I am an Informatics student with interest in web development and machine learning.
+              I enjoy turning ideas into real applications — from simple websites to
+              data-driven systems that can help people make better decisions.
+            </p>
+
+            <div class="about__info">
+              <div>
+                <span class="about__info-title">Student</span>
+                <span class="about__info-name">Informatics<br>Amikom Yogyakarta</span>
+              </div>
+
+              <div>
+                <span class="about__info-title">Focus</span>
+                <span class="about__info-name">Web Dev<br>Machine Learning</span>
+              </div>
+
+              <div>
+                <span class="about__info-title">Goal</span>
+                <span class="about__info-name">Build useful<br>digital products</span>
+              </div>
+            </div>
+
+            <div class="about__buttons">
+              <!-- Ganti href dengan file CV kamu -->
+              <a href="#" class="button">
+                Download CV <i class="ri-download-2-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== SKILLS ====================-->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <h2 class="section__title">Skills</h2>
+        <span class="section__subtitle">Tech stack I use</span>
+
+        <div class="skills__container grid">
+          <!-- SKILL GROUP 1 -->
+          <div class="skills__content">
+            <h3 class="skills__title">Web Development</h3>
+
+            <div class="skills__box">
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+                  <div>
+                    <h3 class="skills__name">HTML</h3>
+                    <span class="skills__level">Intermediate</span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+                  <div>
+                    <h3 class="skills__name">CSS</h3>
+                    <span class="skills__level">Intermediate</span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+                  <div>
+                    <h3 class="skills__name">JavaScript</h3>
+                    <span class="skills__level">Basic–Intermediate</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+                  <div>
+                    <h3 class="skills__name">PHP</h3>
+                    <span class="skills__level">Intermediate</span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+                  <div>
+                    <h3 class="skills__name">MySQL</h3>
+                    <span class="skills__level">Intermediate</span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+                  <div>
+                    <h3 class="skills__name">Flask (Python)</h3>
+                    <span class="skills__level">Basic–Intermediate</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SKILL GROUP 2 -->
+          <div class="skills__content">
+            <h3 class="skills__title">Data & Machine Learning</h3>
+
+            <div class="skills__box">
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+                  <div>
+                    <h3 class="skills__name">Python</h3>
+                    <span class="skills__level">Intermediate</span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+                  <div>
+                    <h3 class="skills__name">Pandas & NumPy</h3>
+                    <span class="skills__level">Intermediate</span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+                  <div>
+                    <h3 class="skills__name">Scikit-learn</h3>
+                    <span class="skills__level">Intermediate</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+                  <div>
+                    <h3 class="skills__name">Classification Models</h3>
+                    <span class="skills__level">LogReg, RF, etc.</span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+                  <div>
+                    <h3 class="skills__name">Data Visualization</h3>
+                    <span class="skills__level">Matplotlib</span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+                  <div>
+                    <h3 class="skills__name">ML Pipeline</h3>
+                    <span class="skills__level">Preprocessing & Evaluation</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+      </div>
+    </section>
+
+    <!--==================== SERVICES ====================-->
+    <section class="services section" id="services">
+      <div class="container">
+        <h2 class="section__title">Services</h2>
+        <span class="section__subtitle">What I can help with</span>
+
+        <div class="services__container grid">
+          <article class="services__card">
+            <i class="ri-window-line services__icon"></i>
+            <h3 class="services__title">Web Development</h3>
+            <p class="services__description">
+              Building simple and responsive web pages, landing pages,
+              and CRUD-based applications using PHP, MySQL, and Flask.
+            </p>
+          </article>
+
+          <article class="services__card">
+            <i class="ri-brain-line services__icon"></i>
+            <h3 class="services__title">Machine Learning</h3>
+            <p class="services__description">
+              Creating predictive models, preprocessing data, and evaluating
+              model performance for classification tasks.
+            </p>
+          </article>
+
+          <article class="services__card">
+            <i class="ri-bar-chart-2-line services__icon"></i>
+            <h3 class="services__title">Data Analysis</h3>
+            <p class="services__description">
+              Exploring datasets, finding patterns, and turning raw data into
+              useful insights to support decisions.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== PROJECTS ====================-->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <h2 class="section__title">Projects</h2>
+        <span class="section__subtitle">Some things I've worked on</span>
+
+        <div class="projects__container grid">
+          <!-- Project 1 -->
+          <article class="projects__card">
+            <img src="assets/img/project-img-1.jpg" alt="Project 1" class="projects__img">
+            <div class="projects__data">
+              <h3 class="projects__title">Online Purchase Intention Prediction</h3>
+              <p class="projects__description">
+                Machine learning model to predict online shoppers' purchase intentions
+                using UCI dataset, comparing Logistic Regression and Random Forest.
+              </p>
+              <a href="#" class="projects__button">
+                View details <i class="ri-arrow-right-line"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="projects__card">
+            <img src="assets/img/project-img-2.jpg" alt="Project 2" class="projects__img">
+            <div class="projects__data">
+              <h3 class="projects__title">WorkWize Platform (Concept)</h3>
+              <p class="projects__description">
+                Concept of a freelance matching platform with focus on simple UX,
+                CRUD-based dashboard, and role-based access using PHP & MySQL.
+              </p>
+              <a href="#" class="projects__button">
+                View details <i class="ri-arrow-right-line"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="projects__card">
+            <img src="assets/img/project-img-3.jpg" alt="Project 3" class="projects__img">
+            <div class="projects__data">
+              <h3 class="projects__title">IoT Volcano Monitoring Prototype</h3>
+              <p class="projects__description">
+                Simple IoT system concept to monitor volcano activity and send data
+                to a server dashboard for visualization and alerts.
+              </p>
+              <a href="#" class="projects__button">
+                View details <i class="ri-arrow-right-line"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== CONTACT ====================-->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <h2 class="section__title">Contact</h2>
+        <span class="section__subtitle">Get in touch</span>
+
+        <div class="contact__container grid">
+          <div class="contact__info">
+            <h3 class="contact__title">Let's talk</h3>
+            <p class="contact__details">
+              Feel free to reach out if you want to collaborate, ask about my projects,
+              or just say hi.
+            </p>
+
+            <div class="contact__data">
+              <div class="contact__card">
+                <i class="ri-mail-line contact__card-icon"></i>
+                <h3 class="contact__card-title">Email</h3>
+                <span class="contact__card-data">wijayanto.agung@example.com</span>
+              </div>
+
+              <div class="contact__card">
+                <i class="ri-map-pin-line contact__card-icon"></i>
+                <h3 class="contact__card-title">Location</h3>
+                <span class="contact__card-data">Yogyakarta, Indonesia</span>
+              </div>
+            </div>
+          </div>
+
+          <form action="" class="contact__form" id="contact-form">
+            <div class="contact__form-div">
+              <label class="contact__form-tag">Name</label>
+              <input type="text" placeholder="Your name" class="contact__form-input">
+            </div>
+
+            <div class="contact__form-div">
+              <label class="contact__form-tag">Email</label>
+              <input type="email" placeholder="yourmail@example.com" class="contact__form-input">
+            </div>
+
+            <div class="contact__form-div contact__form-area">
+              <label class="contact__form-tag">Message</label>
+              <textarea cols="30" rows="10" placeholder="Write your message here" class="contact__form-input"></textarea>
+            </div>
+
+            <button type="submit" class="button">
+              Send Message <i class="ri-send-plane-line"></i>
+            </button>
+
+            <span class="contact__message" id="contact-message"></span>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!--==================== FOOTER ====================-->
+  <footer class="footer">
+    <div class="footer__container container">
+      <h3 class="footer__title">Wijayanto</h3>
+      <span class="footer__subtitle">Informatics Student · Web & ML Enthusiast</span>
+
+      <div class="footer__social">
+        <a href="https://github.com/wijayanto-agung" class="footer__social-link" target="_blank">
+          <i class="ri-github-line"></i>
+        </a>
+        <a href="https://linkedin.com/in/wijayanto-agung" class="footer__social-link" target="_blank">
+          <i class="ri-linkedin-box-line"></i>
+        </a>
+        <a href="https://instagram.com/wijayanto.agung" class="footer__social-link" target="_blank">
+          <i class="ri-instagram-line"></i>
+        </a>
+      </div>
+
+      <span class="footer__copy">
+        &#169; 2025. All rights reserved.
+      </span>
+    </div>
+  </footer>
+
+    <!--========== SCROLL UP ==========-->
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="ri-arrow-up-line scrollup__icon"></i>
+  </a>
+
+  <!--=============== SCROLLREVEAL ===============-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!--=============== MAIN JS ===============-->
+  <script src="/responsive-portfolio-website-patrick-main/assets/js/main.js"></script>
+
+</body>
+</html>
